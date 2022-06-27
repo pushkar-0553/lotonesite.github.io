@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Music Website - Easy Tutorials</title>
+    <link rel="stylesheet"  href="listen.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=LVPzc9m86YqTYmsRytFSrb3qGOA1c3npcboMtQ-Ej8BmLY91osL53oc-lya8Bvbf1qTn3fNkRz6FSEfG1n_hDLviTSMWxTDc49eB40ZXod3UD_CTDEHUrnyVf5weUdA75m07rCs47BxlQT2d7Nj2ayfMus3l0C9t3nXa-S1qT-sAH-lEWPbVJ5aS3YMuWsX93SIAm0RnOKk08euqFs-_mJah84Nf2jHIVBTGt7zj_hp4OkDfW-Ey9Y0nNHb6G6Yc-8AR64MpM56qgxcV5u4eSA9N5MON9jTWOfMKYTxP6CEkU32xeYWRDh-fLkhOLMYKXxyimOx38tTx3wTHSo8eJuPvpkl7UGYWwKzJnqcYDJnJmKsg4kKgFLFHCf2M2F0IMThgfBWkDpKdBpQuJ50yzyVJODoxIG_2e-gZzyRh4e7abz0-g6W1HW4mHuRBhQlcswoWRrhBz89ZBvOw4W-LmmeFpc5FssxLyIOps4InwPwR0AwnSefjF6t3q-ZOLN_DcA0vUjf1IAcwzbKtNLvVLMfmAnTu3m14Ok6fgUNfMq4MG5FIWj1gPPE18AjlDu-ltPM78RtsbbSXhjAUwtnSRc45OOyoDHdzWZmIcr_LIXZ98h7D3397xcS8uV2HVz-zqarGr4AvCwM-d_yUBJnKdHDClZF7ZZLgV5bAU9iDGf8F1-gjZM_gFjKaGo-y1CMSMvr2nERPiqbflzP-wVV4ADtnWiqREYMyqcl4xdoNOil-KY31Rkx64A5B9RBWCyLQ7zoyzLo8al3TEwOsq5GXnQMY4sERd1BgEfvRvhiXdwXlodqQv0kIbsj37L4Zhjcixb5FV2TBtfWPZ-rlFzqvo_bQgfQm48uMf_KtqE_KRquWTJV6VxYeV8e98_EK5WwHNuURUVtbyJFV47wSRNbRIVTuHwOfOWzQqgQ-UULIH3Qw48J848OVId6BPEO7f2v78LqquuP9kc2mpqKrPKJporOxgG-fdvx3ZuO-wmsYQAwfNKntjgbvIsZ8Xfa5AYyvPD5-lAOOxcMV3A78IAiPmivBzGVhDNqQSXrBx5nPO5BuaIqJ9THgRBbN4fxqdRAmWkxxDfWYhOqQbbdP5zL3HJ-1R6rxP73lN8nTCACFay3LPH0KsBJSId2ERLhtI3uV4DouDnQUbOQdTXqzohLHZYOQfOk_bQN-mh0mtJpJAQdaT-psGrTgfYKqDhrMFoL0a6UsXnBaLYDvWJm2iFj3aYkO7NYuKniUhsKCcBqIuXB-50HRWFkRteOvnJzpn590Lks1CViW1UaggZmYVEnybKPdJzGj_i4duSHG8ilmXu8" nonce="f7470f4458af260cfc3aae9ebb71b156" charset="UTF-8"></script></head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo2.jpeg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE<br>REAL<br> SOUND</h1>
+            </div>
+            <div class="right-col">
+                
+                <img src="play.png" width ="50" height="50">
+                <img src="pause.png" width ="50" height="50">
+        
+    </div>
+    <audio id="my song">
+        <source src="bgm1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="my song">
+        <source src="The Avengers.mp3" type="audio/mp3">
+    </audio>
+
+
+<script>
+    var mysong = document.getElementById("my song");
+    var icon = document.getElementsByClassName("right-col")[0];
+    
+    icon.onclick= function(){
+        if(mysong.paused){
+            mysong.play();
+            icon.src="pause.png";
+        }
+        else{
+            mysong.pause();
+            icon.src="pause.png";
+        }
+    
+    }
+</script>
+</body>
+</html>
